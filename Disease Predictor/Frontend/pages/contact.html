@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-auth.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Pedictor</title>
+    <link rel="stylesheet" type="text/css" href="../css/contact.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <script src="../js/contact.js"></script>
+</head>
+<body class="text-center">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+
+    <header class="masthead mb-auto">
+        <div class="inner">
+        <h3 class="masthead-brand">Disease Predictor</h3>
+        <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link" href="../index.html">Home</a>
+            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="searchdisease.html" id="searchdisease" style="display: none;">Search Disease</a>
+            <a class="nav-link active" href="contact.html">Contact Us</a>
+            <a class="nav-link" href="help.html">Help</a>
+        </nav>
+        </div>
+    </header>
+
+<div class="container" style="margin-top: 5%;">
+            
+  <form id="contactform" onsubmit="return contactFormSubmit()">
+      <div class="text">Contact Us</div>
+
+    <div class="field">
+      <div class="fa fa-user"></div>
+      <input name="username" id="username" placeholder="Your name">
+    </div>
+    
+    <div class="field">
+        <div class="fa fa-envelope"></div>
+        <input name="name" id="email" placeholder="Your work email">
+    </div>
+
+    <div class="field">
+      <div class="fa fa-file"></div>
+      <input name="name" id="subject" placeholder="Subject">
+    </div>
+
+    <!--
+    <div class="field">
+      <div class="fa fa-info-circle"></div>
+      <select>
+        <option value="" selected disabled hidden>What's interesting</option>
+        <option>Prediction accuracy</option>
+        <option>Responsiveness of website</option>
+        <option>Secure and fast</option>
+      </select>
+    </div>
+  -->
+
+    <div class="field">
+      <div class="fa fa-envelope"></div>
+      <input name="name" id="msg" placeholder="Message" style="height: 80px;">
+    </div>
+
+    <button class="button" style="margin-top: 20px;" type="submit" onclick="sendMail()">Submit</button><br>
+    
+  </form>
+</div>
+
+<div class="container" style="margin-top: 20px;">
+  <footer class="pt-4 my-md-5 pt-md-5 border-top">
+    <div class="row">
+      <div class="col-12 col-md">
+        <img class="mb-2" src="../images/copyright.png" alt="" width="24" height="24">
+        <small class="d-block mb-3 text-muted">&copy; All rights reserved.</small>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Features</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#">Responsive</a></li>
+          <li><a class="text-muted" href="#">Free from pricing plan</a></li>
+          <li><a class="text-muted" href="#">User friendly</a></li>
+          <li><a class="text-muted" href="#">Fast and Secure</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Socail Accounts</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted fa fa-instagram" href="#"> Instagram</a></li>
+          <li><a class="text-muted fa fa-whatsapp" href="#"> Whatsapp</a></li>
+          <li><a class="text-muted fa fa-twitter" href="#"> Twitter</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Contact Us</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#">0349-0140821</a></li>
+          <li><a class="text-muted" href="#">itsmohsinali5@gmail.com</a></li>
+          <li><a class="text-muted" href="#">0349-0140821</a></li>
+          <li><a class="text-muted" href="#">itsmohsinali5@gmail.com</a></li>
+          <li><a class="text-muted" href="#">0349-0140821</a></li>
+          <li><a class="text-muted" href="#">itsmohsinali5@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</div>
+
+    </div>
+</body>
+</html>
