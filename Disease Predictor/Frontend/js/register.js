@@ -1,0 +1,39 @@
+// Your web app's Firebase configuration
+var firebaseConfig = {
+  apiKey: "AIzaSyDY92ee0ZDoW8UsXnWKp3qiZRWKrsp0YIo",
+  authDomain: "dpwebapp-se.firebaseapp.com",
+  projectId: "dpwebapp-se",
+  storageBucket: "dpwebapp-se.appspot.com",
+  messagingSenderId: "356658982784",
+  appId: "1:356658982784:web:4dc996c469f18f8a7cdb65"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
+const auth = firebase.auth();
+
+
+function registered(){
+  var name = document.getElementById("name");
+  var username = document.getElementById("username");
+  var email = document.getElementById("email");
+var password = document.getElementById("password");
+  
+const promise = auth.createUserWithEmailAndPassword(email.value, password.value);
+  promise.catch(e => alert(e.message));
+  
+}
+
+auth.onAuthStateChanged(function(user){
+  
+  if(user){
+      
+  alert("Registration Successful");
+      
+      //Take user to a different or home page
+
+      //is signed in
+  location.replace("./login.html");
+  }
+  
+});
