@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+      <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-auth.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Pedictor</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+</head>
+<body class="text-center">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+
+    <header class="masthead mb-auto">
+        <div class="inner">
+        <h3 class="masthead-brand">Disease Predictor</h3>
+        <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link active" href="#">Home</a>
+            <a class="nav-link" href="pages/about.html">About</a>
+            <a class="nav-link" href="pages/searchdisease.html" id="searchdisease" style="display: none;">Search Disease</a>
+            <a class="nav-link" href="pages/contact.html">Contact Us</a>
+            <a class="nav-link" href="pages/help.html">Help</a>
+        </nav>
+        </div>
+    </header>
+
+<main role="main">
+
+  <section class="jumbotron text-center" style="background-image: url('images/headerbg.jpg');">
+    <div class="container">
+      <h1>Medical Services</h1>
+      <p>We are providing comprehensive care to our patients by predicting disease on the basis of patient's input symptoms. So that patient could get treatment about specific disease as early as possible.</p>
+      <p>
+        <a href="./pages/register.html" class="btn btn-primary my-2">Get Started</a><br>
+        <a href="./pages/login.html" >Already have an account?</a>
+      </p>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="images/cancer.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225"><title>Placeholder</title></img>
+            <div class="card-body">
+              <p class="card-text">Depending on what's causing your Cancer, symptoms may include Fatigue, Lump or area of thickening that can be felt under the skin, weight changes including unintended loss or gain, skin changes, cough and trouble breathing.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  
+                </div>
+                <p style="font-weight: bold; background-color: black; color: white;">~ Cancer Disease Symptoms</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="images/fever.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225"><title>Placeholder</title></img>
+            <div class="card-body">
+              <p class="card-text">Depending on what's causing your Fever, additional fever signs and symptoms may include Sweating, Chills and shivering, Headache, Muscle aches, Loss of appetite, Irritability, Dehydration and General weakness.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  
+                </div>
+                  <p style="font-weight: bold; background-color: black; color: white;">~ Fever Disease Symptoms</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="images/hepatitis.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225"><title>Placeholder</title></img>
+            <div class="card-body">
+              <p class="card-text">Depending on what's causing your Hapatitis, symptoms may include Fatigue, flu-like symptoms, dark urine, pale stool, loss of appetite, unexplained weight loss, yellow skin and eyes, which may be signs of jaundice.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  
+                </div>
+                <p style="font-weight: bold; background-color: black; color: white;">~ Hepatitis Disease Symptoms</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+</main>
+
+<footer class="mastfoot mt-auto">
+    <div class="inner">
+      <p>Copyright &copy; by Air University developers. All rights reserved.</p>
+    </div>
+</footer>
+
+    </div>
+</body>
+</html>

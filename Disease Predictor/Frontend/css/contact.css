@@ -1,0 +1,215 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: white;
+  border: .05rem solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: white;
+}
+
+body {
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+
+
+/*
+ * Header
+ */
+.masthead {
+  margin-bottom: 2rem;
+}
+
+.masthead-brand {
+  margin-bottom: 0;
+}
+
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  padding-right: 3rem;
+  font-weight: 650;
+  color: black;
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+  font-size: 16px;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: black;
+  color: white;
+  
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: right;
+  }
+}
+
+
+  /*
+ * Form
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Copperplate;
+  background-position: center;
+
+  /*
+  background-image: url('../../../assets/images/3.jpg');
+  background-repeat: no-repeat;
+  */
+}
+body{
+  display: flex;
+  height: 600px;
+  text-align: center;
+  align-items: center;
+  justify-content: left;
+}
+.form{
+  position: relative;
+  width: 370px;
+  height: 500px;
+  background-image: url('../images/registration.jpg');
+  padding: 40px 35px 60px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: inset 0 0 1px #272727;
+  margin-top: 2%;
+}
+
+.text{
+  font-size: 20px;
+  color: black;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+form{
+  margin-top: 10px;
+  padding-left: 5%;
+  margin-left: 5%;
+}
+form .field{
+  margin-top: 20px;
+  display: flex;
+}
+.field .fa{
+  height: 50px;
+  width: 60px;
+  color: bl;
+  font-size: 20px;
+  line-height: 50px;
+  
+}
+.field input,select, form button{
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 15px;
+  color: #868686;
+  padding: 0 20px;
+  border-radius: 25px;
+  border: 1px solid #444;
+  caret-color: #339933;
+  background: white;
+}
+input:focus{
+  color: white;
+  box-shadow: 0 0 5px rgba(0,255,0,.2),
+              inset 0 0 5px rgba(0,255,0,.1);
+  background: linear-gradient(#8d6bb3,#cbb5d8);
+  animation: glow .8s ease-out infinite alternate;
+}
+@keyframes glow {
+   0%{
+    border-color: #339933;
+    box-shadow: 0 0 5px rgba(0,255,0,.2),
+                inset 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+   100%{
+    border-color: #6f6;
+    box-shadow: 0 0 20px rgba(0,255,0,.6),
+                inset 0 0 10px rgba(0,255,0,.4);
+  }
+}
+
+button{
+  margin-top: 5%;
+  border-radius: 25px!important;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+button:hover{
+  color: white;
+    border: 1px solid #339933;
+    box-shadow: 0 0 5px rgba(0,255,0,.3),
+                0 0 10px rgba(0,255,0,.2),
+                0 0 15px rgba(0,255,0,.1),
+                0 2px 0 black;
+    background: linear-gradient(#8d6bb3,#cbb5d8);
+    animation: glow .8s ease-out infinite alternate;
+
+}
+.link{
+  margin-top: 10px;
+  color: #fff;
+}
+.link a{
+  color: #339933;
+  text-decoration: none;
+}
+.link a:hover{
+  text-decoration: underline;
+}
+
+
+  /*
+ * Footer
+ */
+ .mastfoot {
+  color: black;
+}
